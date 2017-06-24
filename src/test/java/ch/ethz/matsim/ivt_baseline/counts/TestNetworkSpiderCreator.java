@@ -34,7 +34,6 @@ import org.matsim.core.scenario.ScenarioUtils;
 import org.matsim.core.utils.io.IOUtils;
 import org.matsim.examples.ExamplesUtils;
 import org.matsim.testcases.MatsimTestUtils;
-import playground.sebhoerl.av.framework.InteractionConfig;
 
 import java.io.File;
 import java.util.ArrayList;
