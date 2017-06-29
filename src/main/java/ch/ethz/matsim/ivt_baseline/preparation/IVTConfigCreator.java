@@ -104,7 +104,7 @@ public class IVTConfigCreator {
 
 		for (String type : new String[] { WORK, REMOTE_WORK, EDUCATION, ESCORT_KIDS, ESCORT_OTHER }) {
 			for (int i = 0; i < 20; i++) {
-				timeMutationBlackList.add(type + " " + i);
+				timeMutationBlackList.add(type + "_" + i);
 			}
 		}
 
