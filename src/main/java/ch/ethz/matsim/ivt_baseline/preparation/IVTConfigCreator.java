@@ -101,6 +101,13 @@ public class IVTConfigCreator {
 		timeMutationBlackList.add(EDUCATION);
 		timeMutationBlackList.add(ESCORT_KIDS);
 		timeMutationBlackList.add(ESCORT_OTHER);
+
+		for (String type : new String[] { WORK, REMOTE_WORK, EDUCATION, ESCORT_KIDS, ESCORT_OTHER }) {
+			for (int i = 0; i < 20; i++) {
+				timeMutationBlackList.add(type + " " + i);
+			}
+		}
+
 		blTAM.setBlackList(timeMutationBlackList);
 		config.addModule(blTAM);
 		// Add location choice
