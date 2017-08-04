@@ -378,7 +378,7 @@ public class ZHCutter {
 			for (Trip trip : trips) {
 				if (mainModeIdentifier.identifyMainMode(trip.getTripElements()).equals("car")) {
 					ActivityFacility origin = scenario.getActivityFacilities().getFacilities().get(trip.getOriginActivity().getFacilityId());
-					ActivityFacility destination = scenario.getActivityFacilities().getFacilities().get(trip.getOriginActivity().getFacilityId());
+					ActivityFacility destination = scenario.getActivityFacilities().getFacilities().get(trip.getDestinationActivity().getFacilityId());
 				
 					List<Leg> legs = trip.getLegsOnly();
 					if (legs.size() > 1) throw new IllegalStateException();
